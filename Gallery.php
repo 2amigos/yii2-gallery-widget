@@ -28,6 +28,12 @@ class Gallery extends Widget
      */
     public $options = [];
     /**
+     * @var boolean whether to write html template of Gallery on initialization.
+     * Useful when you want multiple galleries on page without code repeating.
+     * Need to specify id of container through clientOptions though.
+     */
+    public $renderTemplate = true;
+    /**
      * @var array the HTML attributes for the lightbox container tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
      */
@@ -88,7 +94,9 @@ class Gallery extends Widget
             return null;
         }
         echo $this->renderItems();
-        echo $this->renderTemplate();
+        if ($this->renderTemplate) {
+            echo $this->renderTemplate();
+        }
         $this->registerClientScript();
     }
 
