@@ -8,10 +8,10 @@ if (typeof dosamigos == "undefined" || !dosamigos) {
 }
 dosamigos.gallery = (function($){
     var pub = {
-        registerLightBoxHandlers: function(selector, options) {
+        registerLightBoxHandlers: function(selector, opts) {
             $(document).off('click.gallery', selector).on('click.gallery', selector, function() {
                 var links = $(this).parent().find('a.gallery-item');
-                var options = options || {};
+                var options = opts || {};
                 options.index = $(this)[0];
                 blueimp.Gallery(links, options);
                 return false;
