@@ -119,9 +119,9 @@ class Gallery extends Widget
         }
         $url = ArrayHelper::getValue($item, 'url', $src);
         $options = ArrayHelper::getValue($item, 'options', []);
+        $imageOptions = ArrayHelper::getValue($item, 'imageOptions', []);
         Html::addCssClass($options, 'gallery-item');
-
-        return Html::a(Html::img($src), $url, $options);
+        return Html::a(Html::img($src, $imageOptions), $url, $options);
     }
 
     /**
