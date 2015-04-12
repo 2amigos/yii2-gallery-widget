@@ -66,6 +66,7 @@ class Carousel extends Gallery
     {
         $view = $this->getView();
         GalleryAsset::register($view);
+        DosamigosAsset::register($view);
 
         $id = $this->options['id'];
         $options = Json::encode($this->clientOptions);
