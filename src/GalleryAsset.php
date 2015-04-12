@@ -22,7 +22,6 @@ class GalleryAsset extends AssetBundle
     ];
     public $js = [
         'js/blueimp-gallery.min.js',
-        'dosamigos-blueimp-gallery.js',
     ];
     public $depends = [
         'yii\web\JqueryAsset',
