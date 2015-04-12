@@ -40,7 +40,7 @@ use yii\web\JsExpression;
         ],
     ],
     'clientEvents' => [
-        'test1' => "console.log('test');",
-        'test2' => new JsExpression("console.log('test');"),
+        'test1' => 'function () { }',
+        'test2' => new JsExpression('function () { }'),
     ],
 ]) ?>

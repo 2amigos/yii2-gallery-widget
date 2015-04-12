@@ -27,8 +27,8 @@
 <script src="/2/dosamigos-blueimp-gallery.js"></script>
 <script type="text/javascript">jQuery(document).ready(function () {
 dosamigos.gallery.registerLightBoxHandlers('#w4 a', []);
-dosamigos.gallery.registerLightBoxHandlers('#w5 a', {"test1":console.log('test');});
-jQuery('w5').on('test1', console.log('test'););
-jQuery('w5').on('test2', console.log('test'););
+dosamigos.gallery.registerLightBoxHandlers('#w5 a', {"test1":function () { }});
+jQuery('w5').on('test1', function () { });
+jQuery('w5').on('test2', function () { });
 });</script></body>
 </html>
