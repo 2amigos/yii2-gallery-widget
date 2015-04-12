@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="/0/css/blueimp-gallery.min.css" rel="stylesheet"></head>
+<body>
+
+
+<div id="w1"><a class="gallery-item" href="http://farm8.static.flickr.com/7429/9478294690_51ae7eb6c9_b.jpg" title="Camposanto monumentale (inside)"><img src="http://farm8.static.flickr.com/7429/9478294690_51ae7eb6c9_s.jpg" alt=""></a>
+<a class="gallery-item" href="http://farm3.static.flickr.com/2863/9479121747_0b37c63fe7_b.jpg" title="Hafsten - Sunset"><img src="http://farm3.static.flickr.com/2863/9479121747_0b37c63fe7_s.jpg" alt=""></a>
+<a class="gallery-item" href="http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_b.jpg" title="Sail us to the Moon"><img src="http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_s.jpg" alt=""></a></div><div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel"><div class="slides"></div>
+<h3 class="title"></h3>
+<a class="prev">‹</a>
+<a class="next">›</a>
+<a class="play-pause"></a>
+<ol class="indicator"></ol></div>
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel"><div class="slides"></div>
+<h3 class="title"></h3>
+<a class="prev">‹</a>
+<a class="next">›</a>
+<a class="play-pause"></a>
+<ol class="indicator"></ol></div><script src="/1/jquery.js"></script>
+<script src="/0/js/blueimp-gallery.min.js"></script>
+<script src="/2/dosamigos-blueimp-gallery.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+blueimp.Gallery($('#w1').find('a.gallery-item').hide(), {"carousel":true});
+blueimp.Gallery(["String item",{"url":"http://farm3.static.flickr.com/2863/9479121747_0b37c63fe7_b.jpg","options":{"title":"Hafsten - Sunset"}},{"url":"http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_b.jpg","src":"http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_s.jpg","options":{"title":"Sail us to the Moon"}}], {"test1":console.log('test');,"carousel":true});
+});</script></body>
+</html>
