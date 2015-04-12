@@ -146,6 +146,7 @@ class Gallery extends Widget
     {
         $view = $this->getView();
         GalleryAsset::register($view);
+        DosamigosAsset::register($view);
 
         $id = $this->options['id'];
         $options = Json::encode($this->clientOptions);
