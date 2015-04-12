@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="/0/css/blueimp-gallery.min.css" rel="stylesheet"></head>
+<body>
+
+
+<div id="w4"><a class="gallery-item" href="http://farm8.static.flickr.com/7429/9478294690_51ae7eb6c9_b.jpg" title="Camposanto monumentale (inside)"><img src="http://farm8.static.flickr.com/7429/9478294690_51ae7eb6c9_s.jpg" alt=""></a>
+<a class="gallery-item" href="http://farm3.static.flickr.com/2863/9479121747_0b37c63fe7_b.jpg" title="Hafsten - Sunset"><img src="http://farm3.static.flickr.com/2863/9479121747_0b37c63fe7_s.jpg" alt=""></a>
+<a class="gallery-item" href="http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_b.jpg" title="Sail us to the Moon"><img src="http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_s.jpg" alt=""></a></div><div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls"><div class="slides"></div>
+<h3 class="title"></h3>
+<a class="prev">‹</a>
+<a class="next">›</a>
+<a class="close">×</a>
+<a class="play-pause"></a>
+<ol class="indicator"></ol></div>
+<div id="w5"><a class="gallery-item" href="String item"><img src="String item" alt=""></a>
+<a class="gallery-item" href="http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_b.jpg" title="Sail us to the Moon"><img src="http://farm4.static.flickr.com/3712/9478186779_81c2e5f7ef_s.jpg" alt=""></a></div><div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls"><div class="slides"></div>
+<h3 class="title"></h3>
+<a class="prev">‹</a>
+<a class="next">›</a>
+<a class="close">×</a>
+<a class="play-pause"></a>
+<ol class="indicator"></ol></div><script src="/1/jquery.js"></script>
+<script src="/0/js/blueimp-gallery.min.js"></script>
+<script src="/2/dosamigos-blueimp-gallery.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+dosamigos.gallery.registerLightBoxHandlers('#w4 a', []);
+dosamigos.gallery.registerLightBoxHandlers('#w5 a', {"test1":console.log('test');});
+jQuery('w5').on('test1', console.log('test'););
+jQuery('w5').on('test2', console.log('test'););
+});</script></body>
+</html>

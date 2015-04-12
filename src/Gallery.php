@@ -1,9 +1,10 @@
 <?php
 /**
- * @copyright Copyright (c) 2013 2amigOS! Consulting Group LLC
- * @link http://2amigos.us
- * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
+ * @link https://github.com/2amigos/yii2-gallery-widget
+ * @copyright Copyright (c) 2013-2015 2amigOS! Consulting Group LLC
+ * @license http://opensource.org/licenses/BSD-3-Clause
  */
+
 namespace dosamigos\gallery;
 
 use yii\base\Widget;
@@ -15,10 +16,7 @@ use yii\web\JsExpression;
 /**
  * Gallery renders a BlueImp Gallery items
  *
- * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @link http://www.ramirezcobos.com/
- * @link http://www.2amigos.us/
- * @package dosamigos\gallery
+ * @author Alexander Kochetov <creocoder@gmail.com>
  */
 class Gallery extends Widget
 {
@@ -148,6 +146,7 @@ class Gallery extends Widget
     {
         $view = $this->getView();
         GalleryAsset::register($view);
+        DosamigosAsset::register($view);
 
         $id = $this->options['id'];
         $options = Json::encode($this->clientOptions);
@@ -162,4 +161,4 @@ class Gallery extends Widget
             $view->registerJs(implode("\n", $js));
         }
     }
-} 
+}
