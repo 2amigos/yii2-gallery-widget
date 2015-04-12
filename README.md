@@ -34,7 +34,7 @@ to the `require` section of your `composer.json` file.
 
 ## Usage
 
-***Using Gallery With LightBox***
+### Using Gallery With LightBox
 
 ```
 // on your view
@@ -88,7 +88,8 @@ to the `require` section of your `composer.json` file.
 <?= dosamigos\gallery\Gallery::widget(['items' => $items]);?>
 // ...
 ```
-***Using Carousel With Json Encoded Items***
+
+### Using Carousel With Json Encoded Items
 
 ```
 // on your view
