@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1c38cb1ce3561cb94265f7755c0eb695",
+    "hash": "5a785c72fc86c5d69312565036de2a6a",
     "packages": [
         {
             "name": "bower-asset/blueimp-gallery",
