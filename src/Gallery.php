@@ -48,6 +48,7 @@ class Gallery extends Widget
      * - src: string, the image to display
      * - url: string, the image to display on the lightbox. If none found, will display `src`
      * - options: HTML attributes of the link
+     * - imageOptions: HTML attributes of the image to be displayed
      */
     public $items = array();
     /**
@@ -117,9 +118,10 @@ class Gallery extends Widget
         }
         $url = ArrayHelper::getValue($item, 'url', $src);
         $options = ArrayHelper::getValue($item, 'options', []);
+        $imageOptions = ArrayHelper::getValue($item, 'imageOptions', []);
         Html::addCssClass($options, 'gallery-item');
 
-        return Html::a(Html::img($src), $url, $options);
+        return Html::a(Html::img($src, $imageOptions), $url, $options);
     }
 
     /**
