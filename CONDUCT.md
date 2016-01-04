@@ -26,3 +26,9 @@ project team.
 This code of conduct applies both within project spaces and in public spaces when an individual is representing the 
 project or its community in a direct capacity. Personal views, beliefs and values of individuals do not necessarily 
 reflect those of the organisation or affiliated individuals and organisations.
+
+<blockquote>
+    <a href="http://www.2amigos.us"><img src="http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png"></a><br>
+    <i>WEB, MOBILE DEVELOPMENT & DESIGN</i><br>
+    <a href="http://www.2amigos.us">www.2amigos.us</a>
+</blockquote>
