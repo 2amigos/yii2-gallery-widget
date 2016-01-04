@@ -29,6 +29,6 @@ reflect those of the organisation or affiliated individuals and organisations.
 
 <blockquote>
     <a href="http://www.2amigos.us"><img src="http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png"></a><br>
-    <i>WEB, MOBILE DEVELOPMENT & DESIGN</i><br>
-    <a href="http://www.2amigos.us">www.2amigos.us</a>
+    <i>web, mobile development & design</i><br>
+    <i><a href="http://www.2amigos.us">www.2amigos.us</a></i>
 </blockquote>
