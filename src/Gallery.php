@@ -7,11 +7,13 @@
 
 namespace dosamigos\gallery;
 
+use Yii;
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\JsExpression;
+use yii\web\View;
 
 /**
  * Gallery renders a BlueImp Gallery items
@@ -87,7 +89,7 @@ class Gallery extends Widget
             return null;
         }
         echo $this->renderItems();
-        echo $this->renderTemplate();
+        $this->registerTemplate();
         $this->registerClientScript();
     }
 
@@ -122,6 +124,21 @@ class Gallery extends Widget
         Html::addCssClass($options, 'gallery-item');
 
         return Html::a(Html::img($src, $imageOptions), $url, $options);
+    }
+
+    /**
+     * Registers the template required for the plugin
+     */
+    public function registerTemplate()
+    {
+        static $registered = [];
+        if (in_array($this->templateOptions['id'], $registered))
+            return;
+        $registered[] = $this->templateOptions['id'];
+        $view = $this->getView();
+        $view->on(View::EVENT_END_BODY, function() {
+            echo $this->renderTemplate();
+        });
     }
 
     /**
