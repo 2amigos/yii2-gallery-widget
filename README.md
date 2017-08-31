@@ -140,6 +140,7 @@ to the `require` section of your `composer.json` file.
 // ...
 ```
 
+
 ## Multiple Carousel instances on one page
 ```
 // on your view
@@ -182,7 +183,7 @@ to the `require` section of your `composer.json` file.
 ?>  
 ```
 
-###You can access to different instances in JS now
+### You can access to different instances in JS now
 
 ```
 blueimp_galleries['gallery_1'].initSlides();
